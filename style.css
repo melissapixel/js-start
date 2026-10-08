@@ -1,0 +1,15 @@
+iframe {
+  border: 2px solid #ccc;       /* Рамка */
+  border-radius: 12px;         /* Скругление углов */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Тень */
+  width: 100%;                 /* Ширина */
+  height: 500px;
+}
+
+
+.menu {
+  .menu__items {
+    display: none;
+  }
+
+}

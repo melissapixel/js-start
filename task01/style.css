@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  flex-direction: row;
+
+  & > :first-child {
+    flex: 2;
+
+    .card__list {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px black solid;
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+
+        .card__img {
+          max-width: 150px;
+          max-height: auto;
+          object-fit: cover;
+        }
+        .card__add {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content:space-around;
+        }
+        .card__button {
+          border: none;
+          padding: 5px 20px;
+          border-radius: 10px;
+          background: #6cb98c;
+        }
+      }
+    }
+  }
+  & > :last-child {
+    flex: 1;
+
+    .shopping {
+      display: flex;
+      flex-direction: column;
+
+      .shopping__title {
+        text-align: center;
+      }
+
+      .shopping__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: #bcdfae;
+        width: max-content;
+
+        li {
+          display: flex;
+          padding: 10px;
+        }
+
+      }
+    }
+  }
+}
