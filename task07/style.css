@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+.block {
+  width: 200px;
+  height: 200px;
+}
+.block--red {
+  background: red;
+}
+.block--blue {
+  background: blue;
+}
+.block--green {
+  background: green;
+}
