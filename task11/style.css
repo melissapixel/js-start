@@ -1,0 +1,8 @@
+li {
+  display: flex;
+  gap: 20px;
+}
+
+.task--ready {
+  text-decoration: line-through;
+}
