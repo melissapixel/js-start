@@ -1,0 +1,11 @@
+.block--hidden {
+  display: none;
+}
+
+.cards {
+  max-width: 60%;
+  margin: 0 auto;
+  background: #ffe6e6;
+  padding: 20px;
+
+}
