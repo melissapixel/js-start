@@ -1,0 +1,8 @@
+.checkbox {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: min-content;
+  }
+}
