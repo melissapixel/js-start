@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  gap: 20px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+.button-active {
+  background: #6a336c;
+  color: #fbc1fd;
+  border: none;
+}
