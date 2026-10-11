@@ -1,0 +1,7 @@
+.block-hidden {
+  visibility: hidden;
+}
+
+.block-show {
+  visibility: visible;
+}
