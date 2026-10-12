@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fruits-list {
+  max-width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  button {
+    padding: 5px 10px;
+    background: #83687b;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+  }
+
+  button:hover {
+    background: #bb98b0;
+  }
+}
