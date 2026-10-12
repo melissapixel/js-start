@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.text--hidden {
+  visibility: hidden;
+}
+.button--active {
+  background: #672b63;
+  color: #fdc6fa;
+  border: none;
+}
