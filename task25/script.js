@@ -25,6 +25,17 @@ container.addEventListener('click', (event) => {
     clearInterval(Intervale4);
   }
 
+  const task6 = event.target.closest('.task6');
+  if (task6) {
+    const button = task6.querySelector('button');
+    const p = task6.querySelector('p');
+
+    p.textContent = 'It is save';
+    setTimeout(() => {
+      p.textContent = '';
+    }, 3000);
+  }
+
 });
 
 
@@ -34,6 +45,7 @@ let count1Value = 5;
 const count = document.querySelector('.count');
 const num = document.querySelector('.num');
 const count1 = document.querySelector('.count1');
+const box = document.querySelector('.box');
 
 const intervale = setInterval(() => {
   ++countStart;
@@ -49,5 +61,13 @@ const Intervale5 = setInterval(() => {
   count1.textContent = --count1Value;
   if (count1Value == 0) {
     clearInterval(Intervale5);
+  }
+}, 1000);
+
+setInterval(() => {
+  if (box.style.backgroundColor === 'royalblue') {
+    box.style.backgroundColor = 'rgb(211, 143, 143)';
+  } else {
+    box.style.backgroundColor = 'royalblue';
   }
 }, 1000);
