@@ -20,4 +20,34 @@ container.addEventListener('click', (event) => {
     }, 2000);
   }
 
+  const task4 = event.target.closest('.task4');
+  if (task4) {
+    clearInterval(Intervale4);
+  }
+
 });
+
+
+let countStart = 0;
+let numStart = 0;
+let count1Value = 5;
+const count = document.querySelector('.count');
+const num = document.querySelector('.num');
+const count1 = document.querySelector('.count1');
+
+const intervale = setInterval(() => {
+  ++countStart;
+  count.textContent = countStart;
+}, 1000);
+
+const Intervale4 = setInterval(() => {
+  ++numStart;
+  num.textContent = numStart;
+}, 1000);
+
+const Intervale5 = setInterval(() => {
+  count1.textContent = --count1Value;
+  if (count1Value == 0) {
+    clearInterval(Intervale5);
+  }
+}, 1000);
