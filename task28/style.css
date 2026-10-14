@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+:root[data-theme="white"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eeeeee;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* плавная смена темы */
+}

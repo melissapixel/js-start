@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Base LocalStorage</title>
+</head>
+<body>
+  <div class="content">
+    <!-- На странице есть число «0» и кнопка «+». При каждом клике число увеличивается на 1. Сделай так, чтобы после обновления страницы число не сбрасывалось, а оставалось таким, каким пользователь его оставил. -->
+    <div class="container task1">
+      <button class="button__add">+</button>
+      <p class="task1__num"></p>
+      <button class="button__minus">-</button>
+    </div>
+
+    <!-- На странице есть поле ввода и кнопка «Сохранить имя». Пользователь пишет имя, нажимает кнопку — и имя сохраняется. При следующем заходе на страницу вверху появляется приветствие: «Привет, [имя]!». -->
+     <div class="container task2">
+        <p class="name"></p>
+        <input type="text">
+        <button class="button__save_name">Save</button>
+     </div>
+
+     <!-- На странице есть одна кнопка и текст «Тема: светлая». При клике тема меняется на тёмную (текст меняется на «Тема: тёмная», фон страницы становится тёмным). При следующем заходе на страницу тема должна остаться той, которую пользователь выбрал в прошлый раз. -->
+      <div class="container task3">
+        <button class="theme">Change theme</button>
+      </div>
+
+      <!-- На странице есть чекбокс с подписью «Не показывать больше». Пользователь ставит галочку — и она сохраняется. При следующем заходе на страницу галочка стоит на том же месте. -->
+       <div class="container task4">
+          <input type="checkbox" id="subscribe" name="subscribe" value="on">
+          <label for="subscribe">Subscribe to newsletter</label>
+       </div>
+
+       <!-- На странице есть поле ввода и счётчик «Символов: 0». Пользователь пишет в поле — счётчик показывает количество введённых символов. При следующем заходе на страницу в поле остаётся тот же текст, что пользователь писал в прошлый раз, и счётчик сразу показывает правильное число. -->
+       <div class="container task5">
+          <input type="text" name="" id="">
+          <p></p>
+       </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
