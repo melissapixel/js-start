@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    
+    img {
+      max-width: 120px;
+    }
+  }
+}
