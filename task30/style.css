@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+
+  img {
+    max-width: 150px;
+    height: auto;
+    display: block;    
+    object-fit: cover;
+  }
+
+  .img--big {
+    min-width: 300px;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
