@@ -1,0 +1,15 @@
+.block__notification {
+  color: rgb(102, 136, 167);
+  background: #afcfdc;
+  display: inline-block;
+  padding: 10px 40px;
+  border: #7f9fac 2px solid;
+  position: absolute;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
