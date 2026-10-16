@@ -1,0 +1,12 @@
+.conatainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  margin: 0 auto;
+
+  .names, .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
