@@ -29,3 +29,24 @@ boxCart.addEventListener('drop', () => {
   const boxNew = box.cloneNode(true);
   boxCart.append(boxNew);
 })
+
+
+const contFruit = document.querySelector('.cont__fruit');
+contFruit.addEventListener('dragover', (e) => {
+  e.preventDefault();
+})
+contFruit.addEventListener('drop', () => {
+  if (draggedItem) {
+    contFruit.append(draggedItem);
+    draggedItem = null;
+  }
+})
+
+const fruitList = document.querySelector('.fruit__shop');
+let draggedItem = null;
+fruitList.addEventListener('dragstart', (event) => {
+  const fruitItem = event.target.closest('li');
+  if (fruitItem) {
+    draggedItem = event.target;
+  }
+})

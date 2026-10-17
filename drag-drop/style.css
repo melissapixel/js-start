@@ -1,6 +1,7 @@
 body {
   display: flex;
-  gap: 200px;
+  flex-direction: column;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -15,4 +16,23 @@ body {
   width: 250px;
   height: 250px;
   background: #d6d6d6;
+}
+
+
+.container {
+  display: flex;
+
+  .content {
+    flex: 1;
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .fruit__shop {
+      border-right: 2px solid #91c0e4;
+    }
+  }
 }

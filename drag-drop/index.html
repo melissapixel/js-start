@@ -14,7 +14,23 @@
   <div class="box-cart"></div>
   <div class="box" draggable="true"></div>
 
-  
+  <!-- На странице есть два списка: «Доступные фрукты» (5 пунктов) и пустая «Корзина». Сделай так, чтобы любой пункт из первого списка можно было перетащить в корзину. (Делегирование событий на списке.) -->
+  <!-- Продолжение предыдущего: когда пункт успешно попадает в корзину, он удаляется из списка «Доступные фрукты». То есть перемещается, а не копируется. -->
+  <div class="container">
+    <div class="content">
+      <h2 class="title">Shop</h2>
+      <ul class="fruit__shop">
+        <li draggable="true">Apple</li>
+        <li draggable="true">Banana</li>
+        <li draggable="true">Melow</li>
+        <li draggable="true">Strawberry</li>
+      </ul>
+    </div>
+    <div class="content cont__fruit">
+      <h2 class="title">Cart</h2>
+      <ul class="fruit__cart"></ul>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
