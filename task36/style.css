@@ -1,0 +1,26 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  svg {
+    max-width: 400px;
+  }
+
+  img {
+    width: 740px;
+    height: 420px;
+  }
+
+  .visial {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .slider__dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
