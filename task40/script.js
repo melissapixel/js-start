@@ -114,3 +114,69 @@ firstPromise
   .then((res) => {
     console.log(res);
   });
+
+
+// Сценарий: У тебя есть "сервер" — функция fetchUser(id), которая возвращает Promise. Через 1 секунду она "отдаёт" объект пользователя { id, name, email } или ошибку, если id не найден.
+const user = { id: 1, name: "Mel", email: "mel@example.com" };
+function fetchUser(id) {
+  return new Promise ((resolve, reject) => {
+
+    setTimeout(() => {
+      if (user['id'] === id) {
+        resolve(id);
+      } else {
+        reject('User not found');
+      }
+    }, 1000);
+
+  })
+  .then((res) => {
+    console.log(`Id is ${res}`);
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+}
+fetchUser(1);
+
+
+// Сценарий: В реальном приложении ты часто получаешь данные по цепочке: сначала пользователя, потом его заказы, потом детали заказа.
+// Построй цепочку .then: получи пользователя → получи его заказы → возьми первый заказ → получи детали. Выведи финальный результат в консоль.
+const userObj = {
+  id: 1,
+  name: "Mel",
+  email: "mel@example.com",
+  orderId: 101,
+  books: [
+    { title: "JavaScript: The Good Parts", price: 25 },
+    { title: "Clean Code", price: 30 }
+  ],
+  total: 55
+};
+function getUserId (id) {
+  return new Promise ((resolve) => {
+    setTimeout(() => {
+      resolve(id);
+    }, 1000);
+  })
+
+}
+function getUserBooks (books) {
+  return new Promise ((resolve) => {
+    setTimeout(() => {
+      resolve(books);
+    }, 1000);
+  })
+}
+function getUserTotal (total) {
+  return new Promise ((resolve) => {
+    setTimeout(() => {
+      resolve(total);
+    }, 1000);
+  })
+}
+
+
+getUserId(`User id is ${userObj['id']}`);
+getUserBooks(`Books of User ${userObj['books']}`);
+getUserTotal(`User total books: ${userObj['total']}`);
