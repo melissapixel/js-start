@@ -1,0 +1,18 @@
+.container7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .boxes7 {
+    display: flex;
+    gap: 10px;
+
+    .box {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+  }
+}
