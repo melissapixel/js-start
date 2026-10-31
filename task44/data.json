@@ -1,0 +1,6 @@
+[
+  { "dish": "Pasta", "time": 20, "difficulty": "easy" },
+  { "dish": "Soup", "time": 45, "difficulty": "medium" },
+  { "dish": "Salad", "time": 10, "difficulty": "easy" },
+  { "dish": "Steak", "time": 30, "difficulty": "hard" }
+]

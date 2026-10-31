@@ -1,0 +1,7 @@
+[
+  { "title": "Inception", "genre": "sci-fi", "price": 12, "rating": 8.8 },
+  { "title": "Titanic", "genre": "drama", "price": 10, "rating": 7.9 },
+  { "title": "The Matrix", "genre": "sci-fi", "price": 11, "rating": 8.7 },
+  { "title": "Forrest Gump", "genre": "drama", "price": 9, "rating": 8.8 },
+  { "title": "Interstellar", "genre": "sci-fi", "price": 13, "rating": 8.6 }
+]

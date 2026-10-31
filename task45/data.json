@@ -1,0 +1,6 @@
+[
+  { "country": "Japan", "population": 125, "capital": "Tokyo" },
+  { "country": "Germany", "population": 83, "capital": "Berlin" },
+  { "country": "Brazil", "population": 214, "capital": "Brasilia" },
+  { "country": "Egypt", "population": 104, "capital": "Cairo" }
+]
