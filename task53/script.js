@@ -3,6 +3,7 @@ const image = document.querySelector('img');
 
 async function fetchData() {
   const url = 'https://dog.ceo/api/breeds/image/random';
+  image.src = 'image.png';
   try {
     const response = await fetch(url);
 
